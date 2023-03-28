@@ -6,7 +6,7 @@ const slice = 'Life, the universe and everything' ;
 console.log(/* slice.slice(5,18) *//* slice.slice(5) *//* slice.slice(-10) */slice.slice(-15,-10));
 //------ str-subString and substr -------//
 const subStr = 'Life, the universe and everything' ;
-console.log(/* subStr.substring(6, 18) *//* subStr.substr(6, 13) *//* subStr.substring(6) */subStr.substr(-10));
+console.log(/* subStr.substring(6, 18) */subStr.substr(6, 13)/* subStr.substring(6) *//* subStr.substr(-10) */);
 //------ str-replace ------//
 const replace = 'Life, the universe and everything. This universe axis the people life' ;
 console.log(replace.replace(/* "universe","world" *//* /universe/i,"world" *//universe/g,"world"));
@@ -49,4 +49,16 @@ console.log(includes.includes(/* "the" */"the",50));
 const starts = 'Life, the universe and everything. This universe axis the people life' ;
 console.log(starts/* .startsWith("Life") */.endsWith("life"));
 
+let email="dharumaraj853@gmail.com";
+console.log(email.replace(/[a-zA-Z0-9]/g,""));
 
+let usrMail="dharumaj5678@gmail.com";
+let number=usrMail.match(/[0-9]/g);
+var add=0;
+
+for(let i=0;i<number.length;i++){
+	if(number[i]%2==0){
+		add=add+parseInt(number[i]);
+	}
+}
+console.log(add);
